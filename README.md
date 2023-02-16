@@ -43,6 +43,8 @@ git push --tags
 
 pod lib lint --verbose --allow-warnings --no-clean
 
+pod lib lint --verbose --allow-warnings --no-clean --skip-import-validation --use-libraries
+
 pod spec lint --sources='https://github.com/songmenglong/SMLSpec.git,https://github.com/CocoaPods/Specs.git' --allow-warnings
 
 pod repo add SMLSpec https://github.com/songmenglong/SMLSpec.git
