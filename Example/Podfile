@@ -2,9 +2,12 @@ use_frameworks!
 
 platform :ios, '10.0'
 
+source 'https://github.com/CocoaPods/Specs.git'
+source 'https://github.com/songmenglong/SMLSpec.git'
+
 target 'SMLFFmpegLib_Example' do
   pod 'SMLFFmpegLib', :path => '../'
-
+  
   target 'SMLFFmpegLib_Tests' do
     inherit! :search_paths
 
